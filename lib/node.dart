@@ -9,6 +9,13 @@ import 'console.dart';
 import 'events.dart';
 import 'module.dart';
 
+export 'buffer.dart';
+
+@JS('Error')
+abstract class JsError {
+  external factory JsError([String message, String fileName, int lineNumber]);
+}
+
 external dynamic require(String id);
 
 external Console get console;
