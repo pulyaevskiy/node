@@ -9,3 +9,9 @@ import 'package:js/js.dart';
 /// This function binds to JavaScript `Object.keys()`.
 @JS('Object.keys')
 external List<String> objectKeys(object);
+
+/// JavaScript Error object.
+@JS('Error')
+abstract class JsError {
+  external factory JsError([String message, String fileName, int lineNumber]);
+}

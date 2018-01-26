@@ -1,6 +1,6 @@
-/// Support for doing something awesome.
+/// Bindings to built-in NodeJS APIs.
 ///
-/// More dartdocs go here.
+/// This library exports only globally available APIs.
 @JS()
 library node;
 
@@ -9,13 +9,10 @@ import 'console.dart';
 import 'events.dart';
 import 'module.dart';
 
+export 'js.dart';
 export 'buffer.dart';
 
-@JS('Error')
-abstract class JsError {
-  external factory JsError([String message, String fileName, int lineNumber]);
-}
-
+// Even though this binding is here it is not actually a global.
 external dynamic require(String id);
 
 external Console get console;
