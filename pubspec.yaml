@@ -1,0 +1,17 @@
+name: node
+description: A starting point for Dart libraries or applications.
+version: 0.0.1
+#homepage: https://www.example.com
+#author: Anatoly Pulyaevskiy <email@example.com>
+
+environment:
+  sdk: '>=2.0.0-dev.19.0 <2.0.0'
+
+dependencies:
+  js:
+  build_runner:
+  build_web_compilers:
+    path: ../build/build_web_compilers
+
+dev_dependencies:
+  test: ^0.12.0
