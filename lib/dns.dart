@@ -21,6 +21,7 @@ DNS get dns => require('dns');
 ///     }
 ///     dns.lookup('google.com', options, allowInterop(lookupHandler));
 @JS()
+@anonymous
 abstract class DNS {
   /// Resolves a hostname (e.g. 'nodejs.org') into the first found IPv4 or
   /// IPv6 record.

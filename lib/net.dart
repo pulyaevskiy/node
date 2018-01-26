@@ -13,6 +13,7 @@ import 'node.dart';
 Net get net => require('net');
 
 @JS()
+@anonymous
 abstract class Net {
   external num isIP(String input);
   external bool isIPv4(String input);

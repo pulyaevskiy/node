@@ -40,6 +40,7 @@ typedef void HttpRequestListener(
 /// See also:
 /// - [createHttpAgent]
 @JS()
+@anonymous
 abstract class HTTP {
   /// Returns a new instance of [HttpServer].
   ///
@@ -60,6 +61,7 @@ abstract class HTTP {
 }
 
 @JS()
+@anonymous
 abstract class HttpAgent {
   external factory HttpAgent([HttpAgentOptions options]);
   external void destroy();
@@ -145,6 +147,7 @@ abstract class HttpServer extends EventEmitter {
 }
 
 @JS()
+@anonymous
 abstract class ServerResponse extends Writable {
   external void addTrailers(headers);
   external Socket get connection;
@@ -168,6 +171,7 @@ abstract class ServerResponse extends Writable {
 }
 
 @JS()
+@anonymous
 abstract class IncomingMessage extends Readable {
   external void destroy([error]);
   external JsObject get headers;
