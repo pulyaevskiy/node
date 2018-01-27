@@ -63,7 +63,12 @@ abstract class HTTP {
 @JS()
 @anonymous
 abstract class HttpAgent {
-  external factory HttpAgent([HttpAgentOptions options]);
+  external factory HttpAgent({
+    bool keepAlive,
+    num keepAliveMsecs,
+    num maxSockets,
+    num maxFreeSockets,
+  });
   external void destroy();
 }
 

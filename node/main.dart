@@ -1,7 +1,3 @@
-@JS()
-library main;
-
-import 'package:js/js.dart';
 import 'package:node/os.dart';
 import 'package:node/node.dart';
 
